@@ -9,4 +9,13 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     Vector2 moveDirection;
     [SerializeField] float speed = 5f;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        input = new PlayerControls();
+
+        input.Player.Move.performed += ctx => moveDirection = ctx.ReadValue<Vector2>();
+        input.Player.Move.canceled += ctx => moveDirection = Vector2.zero;
+    }
 }
