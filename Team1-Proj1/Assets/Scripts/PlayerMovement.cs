@@ -15,7 +15,20 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         input = new PlayerControls();
 
+        //Input activations that relate to PlayerActions map
         input.Player.Move.performed += ctx => moveDirection = ctx.ReadValue<Vector2>();
         input.Player.Move.canceled += ctx => moveDirection = Vector2.zero;
+    }
+
+    private void FixedUpdate()
+    {
+        //Direction relative to the player
+        Vector3 localDirection = new Vector3(moveDirection.x, 0f, moveDirection.y).normalized;
+
+        //Same Vector converted to world space
+        Vector3 direction = transform.TransformDirection(localDirection);
+
+        //Physically moves the player using the Rigidbody
+        rb.MovePosition(rb.position + speed * Time.fixedDeltaTime * direction);
     }
 }
