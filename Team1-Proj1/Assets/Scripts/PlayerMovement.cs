@@ -31,4 +31,14 @@ public class PlayerMovement : MonoBehaviour
         //Physically moves the player using the Rigidbody
         rb.MovePosition(rb.position + speed * Time.fixedDeltaTime * direction);
     }
+
+    private void OnEnable()
+    {
+        input.Enable();
+    }
+
+    private void OnDisable()
+    {
+        input.Disable();
+    }
 }
