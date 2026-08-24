@@ -5,15 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    PlayerControls input;
+    Rigidbody rb;
+    Vector2 moveDirection;
+    [SerializeField] float speed = 5f;
 }
