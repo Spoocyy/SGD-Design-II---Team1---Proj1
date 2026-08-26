@@ -87,11 +87,19 @@ public class PlayerMovement : MonoBehaviour
     {
 
         Vector3 origin = transform.position + sphereCastOriginOffset;
+        Vector3 endPoint = origin + Vector3.down * sphereCastDistance;
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(origin, sphereCastRadius);
 
         //Show the difference between grounded or not grounded with the gizmo
         Gizmos.color = isGrounded ? Color.green : Color.red;
+        Gizmos.DrawWireSphere(endPoint, sphereCastRadius);
+
+        Gizmos.color = Color.white;
+        Gizmos.DrawLine(origin, endPoint);
 
         //Physically shows the sphere in the editor so we can see and change its position if needed
-        Gizmos.DrawWireSphere(origin + Vector3.down * sphereCastDistance, sphereCastRadius);
+        //Gizmos.DrawWireSphere(origin + Vector3.down * sphereCastDistance, sphereCastRadius);
     }
 }
