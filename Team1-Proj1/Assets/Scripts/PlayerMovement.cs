@@ -47,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
             ApplyJump();
         }
         jumpRequested = false;
+
+        Debug.Log($"Pos: {rb.position} | Vel: {rb.linearVelocity}");
     }
 
     //Cast a sphere downward from the player to detect if they're touching the ground
