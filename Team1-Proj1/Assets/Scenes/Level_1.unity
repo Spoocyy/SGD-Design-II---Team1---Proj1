@@ -2014,6 +2014,7 @@ GameObject:
   - component: {fileID: 112410041}
   - component: {fileID: 112410040}
   - component: {fileID: 112410039}
+  - component: {fileID: 112410042}
   m_Layer: 0
   m_Name: Pillar_02 (9)
   m_TagString: Untagged
@@ -2093,6 +2094,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &112410042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112410038}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3607552, y: 4.644419, z: 1.3605278}
+  m_Center: {x: -0.00002464652, y: 2.4830763, z: 0.000013798475}
 --- !u!1 &113927326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5931,6 +5953,7 @@ GameObject:
   - component: {fileID: 291600441}
   - component: {fileID: 291600440}
   - component: {fileID: 291600439}
+  - component: {fileID: 291600442}
   m_Layer: 0
   m_Name: Pillar_02 (2)
   m_TagString: Untagged
@@ -6010,6 +6033,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &291600442
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291600438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3607552, y: 4.644419, z: 1.3605278}
+  m_Center: {x: -0.00002464652, y: 2.4830763, z: 0.000013798475}
 --- !u!1 &301588248
 GameObject:
   m_ObjectHideFlags: 0
@@ -7367,6 +7411,7 @@ GameObject:
   - component: {fileID: 387907786}
   - component: {fileID: 387907785}
   - component: {fileID: 387907784}
+  - component: {fileID: 387907787}
   m_Layer: 0
   m_Name: Braiser_03 (6)
   m_TagString: Untagged
@@ -7446,6 +7491,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &387907787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387907783}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4425174, y: 1.9074892, z: 1.4427552}
+  m_Center: {x: 0.0008312463, y: 1.1306509, z: -0.00091999763}
 --- !u!1 &392178800
 GameObject:
   m_ObjectHideFlags: 0
@@ -11807,6 +11873,7 @@ GameObject:
   - component: {fileID: 698959978}
   - component: {fileID: 698959977}
   - component: {fileID: 698959976}
+  - component: {fileID: 698959979}
   m_Layer: 0
   m_Name: Pillar_02 (4)
   m_TagString: Untagged
@@ -11886,6 +11953,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &698959979
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698959975}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3607552, y: 4.644419, z: 1.3605278}
+  m_Center: {x: -0.00002464652, y: 2.4830763, z: 0.000013798475}
 --- !u!1 &714004171
 GameObject:
   m_ObjectHideFlags: 0
@@ -16172,6 +16260,7 @@ GameObject:
   - component: {fileID: 938145271}
   - component: {fileID: 938145273}
   - component: {fileID: 938145272}
+  - component: {fileID: 938145274}
   m_Layer: 0
   m_Name: Braiser_03 (1)
   m_TagString: Untagged
@@ -16251,6 +16340,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938145270}
   m_Mesh: {fileID: -3230567500016598164, guid: ca00b85a534c3e6499fe4b1d50f22bd0, type: 3}
+--- !u!65 &938145274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938145270}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4425174, y: 1.9074892, z: 1.4427552}
+  m_Center: {x: 0.0008312463, y: 1.1306509, z: -0.00091999763}
 --- !u!1 &955965699
 GameObject:
   m_ObjectHideFlags: 0
@@ -21963,6 +22073,7 @@ GameObject:
   - component: {fileID: 1380245281}
   - component: {fileID: 1380245280}
   - component: {fileID: 1380245279}
+  - component: {fileID: 1380245282}
   m_Layer: 0
   m_Name: Pillar_02 (7)
   m_TagString: Untagged
@@ -22042,6 +22153,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1380245282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380245278}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3607552, y: 4.644419, z: 1.3605278}
+  m_Center: {x: -0.00002464652, y: 2.4830763, z: 0.000013798475}
 --- !u!1 &1380682897
 GameObject:
   m_ObjectHideFlags: 0
@@ -24506,6 +24638,7 @@ GameObject:
   - component: {fileID: 1575076077}
   - component: {fileID: 1575076076}
   - component: {fileID: 1575076075}
+  - component: {fileID: 1575076078}
   m_Layer: 0
   m_Name: Pillar_02 (6)
   m_TagString: Untagged
@@ -24585,6 +24718,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1575076078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575076074}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3607552, y: 4.644419, z: 1.3605278}
+  m_Center: {x: -0.00002464652, y: 2.4830763, z: 0.000013798475}
 --- !u!1 &1576359346
 GameObject:
   m_ObjectHideFlags: 0
@@ -28551,6 +28705,7 @@ GameObject:
   - component: {fileID: 1813373469}
   - component: {fileID: 1813373468}
   - component: {fileID: 1813373467}
+  - component: {fileID: 1813373470}
   m_Layer: 0
   m_Name: Pillar_02 (3)
   m_TagString: Untagged
@@ -28630,6 +28785,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1813373470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813373466}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3607552, y: 4.644419, z: 1.3605278}
+  m_Center: {x: -0.00002464652, y: 2.4830763, z: 0.000013798475}
 --- !u!1 &1833053300
 GameObject:
   m_ObjectHideFlags: 0
@@ -29985,6 +30161,7 @@ GameObject:
   - component: {fileID: 1914260772}
   - component: {fileID: 1914260771}
   - component: {fileID: 1914260770}
+  - component: {fileID: 1914260773}
   m_Layer: 0
   m_Name: Pillar_02 (5)
   m_TagString: Untagged
@@ -30064,6 +30241,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1914260773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914260769}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3607552, y: 4.644419, z: 1.3605278}
+  m_Center: {x: -0.00002464652, y: 2.4830763, z: 0.000013798475}
 --- !u!1 &1917151884
 GameObject:
   m_ObjectHideFlags: 0
