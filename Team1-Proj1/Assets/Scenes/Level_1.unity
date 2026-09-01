@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -8422,8 +8422,8 @@ Camera:
   m_GameObject: {fileID: 429648646}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -9543,7 +9543,7 @@ Transform:
   m_GameObject: {fileID: 488266055}
   serializedVersion: 2
   m_LocalRotation: {x: 0.004018485, y: 0.012254188, z: -0.99991596, w: -0.0013199176}
-  m_LocalPosition: {x: 134.1, y: 142.07, z: 365.67}
+  m_LocalPosition: {x: 131.87001, y: 142.11002, z: 365.64}
   m_LocalScale: {x: 9.8566885, y: 30.310398, z: 47.376976}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10329,7 +10329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54026334bc5fd584b971cabe9d54206b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54026334bc5fd584b971cabe9d54206b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10337,7 +10337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54026334bc5fd584b971cabe9d54206b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54026334bc5fd584b971cabe9d54206b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10349,7 +10349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54026334bc5fd584b971cabe9d54206b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54026334bc5fd584b971cabe9d54206b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -19575,8 +19575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BallThrower
   throwPoint: {fileID: 1383279192}
   ballPrefab: {fileID: 351128977211584021, guid: 5a9ac01f49538034491bae846d2a951b, type: 3}
-  throwForce: 5
-  arcHeight: 0.3
+  throwForce: 7
+  arcHeight: 0.5
   cameraTransform: {fileID: 429648647}
 --- !u!136 &1178866830
 CapsuleCollider:
@@ -19824,7 +19824,7 @@ Transform:
   m_GameObject: {fileID: 1187440987}
   serializedVersion: 2
   m_LocalRotation: {x: 0.004018485, y: 0.012254188, z: -0.99991596, w: -0.0013199176}
-  m_LocalPosition: {x: 134.19, y: 172.26, z: 366.43}
+  m_LocalPosition: {x: 131.96, y: 172.3, z: 366.4}
   m_LocalScale: {x: 9.8566885, y: 30.310398, z: 47.376976}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24265,7 +24265,7 @@ Transform:
   m_GameObject: {fileID: 1548947412}
   serializedVersion: 2
   m_LocalRotation: {x: 0.004018485, y: 0.012254188, z: -0.99991596, w: -0.0013199176}
-  m_LocalPosition: {x: 134.47, y: 143.19, z: 319.15}
+  m_LocalPosition: {x: 132.24, y: 143.23001, z: 319.12}
   m_LocalScale: {x: 9.8566885, y: 30.310398, z: 47.376976}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27801,7 +27801,7 @@ Transform:
   m_GameObject: {fileID: 1780276384}
   serializedVersion: 2
   m_LocalRotation: {x: 0.004018485, y: 0.012254188, z: -0.99991596, w: -0.0013199176}
-  m_LocalPosition: {x: 134.56, y: 173.39, z: 319.9}
+  m_LocalPosition: {x: 132.33, y: 173.43001, z: 319.87}
   m_LocalScale: {x: 9.8566885, y: 30.310398, z: 47.376976}
   m_ConstrainProportionsScale: 0
   m_Children: []
