@@ -2950,7 +2950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5477567570727092419, guid: 4874a046b0ce76e4285f78c6b4e514f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.921
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5477567570727092419, guid: 4874a046b0ce76e4285f78c6b4e514f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3080,6 +3080,10 @@ PrefabInstance:
     - target: {fileID: 2989941937331053745, guid: af0251662ce5880478fc4015a2c7df13, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106456634001428597, guid: af0251662ce5880478fc4015a2c7df13, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
