@@ -1,3 +1,6 @@
+//Erik Robertson
+//8/31/2026
+//SGD Design II - Project 1 - Team 1
 using UnityEngine;
 
 public class CameraLook : MonoBehaviour
