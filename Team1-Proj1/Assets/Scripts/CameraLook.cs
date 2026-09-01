@@ -16,7 +16,7 @@ public class CameraLook : MonoBehaviour
 
     private void Awake()
     {
-        input = GetComponent<PlayerControls>();
+        input = new PlayerControls();
         input.Player.Look.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
         input.Player.Look.canceled += ctx => lookInput = Vector2.zero;
     }
