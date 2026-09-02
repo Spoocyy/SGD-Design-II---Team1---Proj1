@@ -4,7 +4,6 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int maxHealth = 100;
     [SerializeField] HealthUI healthUI;
-    [SerializeField] PlayerRespawn playerRespawn;
 
     public int CurrentHealth { get; private set; }
 
@@ -20,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        PlayerRespawn playerRespawn = GetComponent<PlayerRespawn>();
+
         if (CurrentHealth <= 0)
         {
             return;

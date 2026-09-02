@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
-    [SerializeField] PlayerHealth playerHealth;
     [SerializeField] Transform respawnPoint;
     [SerializeField] float respawnDelay = 2f;
 
@@ -27,6 +26,8 @@ public class PlayerRespawn : MonoBehaviour
 
         transform.position = respawnPoint.position;
         transform.rotation = respawnPoint.rotation;
+
+        PlayerHealth playerHealth = GetComponent<PlayerHealth>();
 
         playerHealth.ResetHealth();
     }
