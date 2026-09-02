@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     private void Awake()
     {
         input = new PlayerControls();
+        pauseMenuUI.SetActive(false);
     }
 
     private void OnEnable()
@@ -28,7 +29,17 @@ public class PauseMenu : MonoBehaviour
         input.UI.Disable();
     }
 
+    public void Resume()
+    {
+        SetPaused(false);
+    }
+
     private void TogglePause(InputAction.CallbackContext context)
+    {
+        SetPaused(!IsPaused);
+    }
+
+    private void SetPaused(bool paused)
     {
         IsPaused = !IsPaused;
         pauseMenuUI.SetActive(IsPaused);

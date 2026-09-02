@@ -23,6 +23,8 @@ public class CameraLook : MonoBehaviour
 
     private void LateUpdate()
     {
+        if(PauseMenu.IsPaused) return;
+
         float yaw = lookInput.x * sensitivity;
         pitch -= lookInput.y * sensitivity;
         pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
