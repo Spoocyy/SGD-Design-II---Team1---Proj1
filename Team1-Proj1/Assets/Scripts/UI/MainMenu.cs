@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
     public void CreditsMenu()
     {
         SceneManager.LoadSceneAsync("Credits");
@@ -26,6 +25,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadSceneAsync("Cut Scene");
     }
 
