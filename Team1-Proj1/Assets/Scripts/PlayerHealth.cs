@@ -35,6 +35,17 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void Kill()
+    {
+        PlayerRespawn playerRespawn = GetComponent<PlayerRespawn>();
+
+        if (CurrentHealth <= 0) { return; }
+
+        CurrentHealth = 0;
+        healthUI.UpdateBar(CurrentHealth, maxHealth);
+        playerRespawn.HandleDeath();
+    }
+
     public void ResetHealth()
     {
         CurrentHealth = maxHealth;
