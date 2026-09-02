@@ -7,8 +7,8 @@ public class CameraLook : MonoBehaviour
 {
     [SerializeField] Transform playerBody;
     [SerializeField] float sensitivity = 0.1f;
-    [SerializeField] float minPitch = -80f;
-    [SerializeField] float maxPitch = 80f;
+    [SerializeField] float minPitch = -80f; 
+    [SerializeField] float maxPitch = 80f; 
 
     private PlayerControls input;
     private Vector2 lookInput;
@@ -28,7 +28,6 @@ public class CameraLook : MonoBehaviour
         pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
 
         playerBody.Rotate(Vector3.up * yaw);
-
         transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
     }
 
