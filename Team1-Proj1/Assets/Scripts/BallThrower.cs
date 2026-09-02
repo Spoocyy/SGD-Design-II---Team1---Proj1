@@ -43,11 +43,12 @@ public class BallThrower : MonoBehaviour
         throwDirection.Normalize();
 
         Rigidbody rb = ballPrefab.GetComponent<Rigidbody>();
+        FireSkull skull = ballPrefab.GetComponent<FireSkull>();
+
         ballPrefab.transform.SetParent(null);
         rb.isKinematic = false;
+        skull.PrepareForThrow();
         rb.AddForce(throwDirection * throwForce, ForceMode.Impulse);
-
-        Destroy(ballPrefab, 60f);
 
         StartCoroutine(RespawnAfterDelay(1f));
     }
