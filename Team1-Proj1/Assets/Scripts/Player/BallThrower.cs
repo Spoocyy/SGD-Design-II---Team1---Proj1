@@ -14,6 +14,7 @@ public class BallThrower : MonoBehaviour
     [SerializeField] float arcHeight = 0.3f;
     [SerializeField] Transform cameraTransform;
     private Vector3 throwDirection;
+    [SerializeField] AudioClip swooshSFX;
 
     PlayerControls input;
 
@@ -49,6 +50,7 @@ public class BallThrower : MonoBehaviour
         rb.isKinematic = false;
         skull.PrepareForThrow();
         rb.AddForce(throwDirection * throwForce, ForceMode.Impulse);
+        AudioManager.instance.PlaySFX(swooshSFX);
 
         StartCoroutine(RespawnAfterDelay(1f));
     }

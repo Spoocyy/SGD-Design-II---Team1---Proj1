@@ -1,16 +1,15 @@
+//Erik Robertson
+//9/2/2026
+//SGD Design II - Project 1 - Team 1
 using UnityEngine;
 
 public class LevelAudioTrigger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] AudioClip levelAmbience;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        AudioManager.instance.PlayAmbience(levelAmbience);
+        AudioManager.instance.StopMusic();
     }
 }
