@@ -48,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
 
         CurrentHealth = 0;
         healthUI.UpdateBar(CurrentHealth, maxHealth);
+        AudioManager.instance.PlaySFX(hurtSFX);
         playerRespawn.HandleDeath();
     }
 
