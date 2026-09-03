@@ -24,6 +24,7 @@ public class FireSkull : MonoBehaviour
 
     public void PrepareForThrow()
     {
+        if(PauseMenu.IsPaused) return;
         isHeld = false;
         isGrounded = false;
     }

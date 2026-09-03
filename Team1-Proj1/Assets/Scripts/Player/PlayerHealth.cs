@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int maxHealth = 100;
     [SerializeField] HealthUI healthUI;
+    [SerializeField] AudioClip hurtSFX;
 
     public int CurrentHealth { get; private set; }
 
@@ -31,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
         CurrentHealth = Mathf.Max(CurrentHealth - amount, 0);
         healthUI.UpdateBar(CurrentHealth, maxHealth);
+        AudioManager.instance.PlaySFX(hurtSFX);
 
         if (CurrentHealth == 0)
         {
@@ -46,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
 
         CurrentHealth = 0;
         healthUI.UpdateBar(CurrentHealth, maxHealth);
+        AudioManager.instance.PlaySFX(hurtSFX);
         playerRespawn.HandleDeath();
     }
 

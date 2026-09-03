@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     PlayerControls input;
     Rigidbody rb;
+    Animator anim;
     Vector2 moveDirection;
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpForce = 5f;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         input = new PlayerControls();
+        anim = GetComponent<Animator>();
 
         //Input activations that relate to PlayerActions map
         input.Player.Move.performed += ctx => moveDirection = ctx.ReadValue<Vector2>();
@@ -39,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
 
         //Physically moves the player using the Rigidbody
         rb.MovePosition(rb.position + speed * Time.fixedDeltaTime * direction);
+
+        //sqrMagnitude is cheaper (memory wise) to use compared to magnitude
+        anim.SetBool("isMoving", moveDirection.sqrMagnitude > 0.01f);
 
         CheckGrounded();
 
@@ -70,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         //Reset vertical velocity first so jump height is consistent
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        anim.SetTrigger("Jump");
     }
 
     private void OnEnable()
