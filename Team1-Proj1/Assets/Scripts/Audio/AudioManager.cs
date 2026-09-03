@@ -12,8 +12,15 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null) { instance = this; }
-        else Destroy(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void PlaySFX(AudioClip clip)
@@ -32,6 +39,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayAmbience(AudioClip clip)
     {
+        if (ambienceSource.clip == clip && musicSource.isPlaying) { return; }
         ambienceSource.clip = clip;
         ambienceSource.loop = true;
         ambienceSource.Play();
