@@ -46,10 +46,12 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("isMoving", moveDirection.sqrMagnitude > 0.01f);
 
         CheckGrounded();
+        anim.SetBool("isGrounded", isGrounded);
 
         if(jumpRequested && isGrounded)
         {
             ApplyJump();
+            anim.SetTrigger("Jump");
         }
         jumpRequested = false;
     }
@@ -74,8 +76,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Reset vertical velocity first so jump height is consistent
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        anim.SetTrigger("Jump");
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);     
     }
 
     private void OnEnable()
